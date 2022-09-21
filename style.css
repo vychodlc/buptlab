@@ -2,6 +2,7 @@ body {
   --color: #1449aa;
   --encolor: #3163c7;
   --bgcolor: #ffffff;
+  overflow-x: hidden;
 }
 
 * {
@@ -40,7 +41,7 @@ a {
 .container .header {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 150px;
   background-color: var(--color);
   display: flex;
   flex-direction: column;
@@ -50,13 +51,13 @@ a {
 .container .header .boxtop {
   position: relative;
   width: 100vw;
-  height: 150px;
-  padding: 0 15vw;
+  height: 100px;
+  padding: 0 20vw;
 }
 .container .header .boxtop .boxlogo {
   position: relative;
   width: 50vw;
-  height: 150px;
+  height: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -81,7 +82,7 @@ a {
   width: 100vw;
   height: 50px;
   border-top: 1px solid #888;
-  padding: 0 15vw;
+  padding: 0 20vw;
 }
 .container .header .boxbottom .navitem {
   text-align: center;
@@ -147,4 +148,41 @@ a {
 }
 .content .contentItem .hoverbox .hoverimg .clickdots .active {
   background-color: #fff;
+}
+.content .contentItem .homebox {
+  position: relative;
+  width: 100vw;
+}
+.content .contentItem .homebox .homeboxheader {
+  position: relative;
+  width: 60vw;
+  height: 100px;
+  line-height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 24px;
+}
+.content .contentItem .homebox .homeboxdot {
+  width: 20px;
+  height: 20px;
+  background-color: var(--color);
+}
+.content .contentItem .homebox .homeboxtitle {
+  padding: 0 10px;
+  background-color: #fff;
+}
+.content .contentItem .homebox .homeboxline {
+  flex: 1;
+  height: 10px;
+  background-color: var(--color);
+}
+
+.content .contentItem .homebox .homeboxcontent {
+  position: relative;
+  width: 60vw;
+  height: 30px;
+  margin: 0 auto;
+  border: 1px solid #000;
 }
